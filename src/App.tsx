@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import {Main} from "./components/main/Main";
+import {Button} from "./components/common/button/Button";
+import {Logicom} from "./components/logicom/Logicom";
+import {Coral} from "./components/coral/Coral";
+import {GoodBody} from "./components/goodbody/GoodBody";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [isModalVisible, setModelStatus] = useState<boolean>(false);
+
+    const changeModalStatus = () => {
+        setModelStatus(!isModalVisible)
+    }
+
+    return (
+        <div className="App">
+            <Main/>
+            <Logicom/>
+            <Coral/>
+            <GoodBody/>
+            <Button name={'See more projects'} type={'primary'} onClick={changeModalStatus}/>
+            <div className={`modal isModalVisible-${isModalVisible}`}>
+                modal
+            </div>
+        </div>
+    );
 }
 
 export default App;

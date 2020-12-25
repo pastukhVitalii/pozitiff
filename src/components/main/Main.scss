@@ -1,0 +1,94 @@
+.container {
+  height: 480px;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+}
+
+%title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 50px 50px 0 0;
+}
+
+.mainTitle, .coralTitle {
+  @extend %title;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #466D8A;
+  letter-spacing: 0.03em;
+
+}
+
+.logicomTitle {
+  @extend %title;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.goodBodyTitle {
+  @extend %title;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #466D8A;
+}
+
+.coralBack {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.81) 10%, rgba(246, 249, 251, 1) 100%);
+  padding-bottom: 26px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.25s ease-out;
+}
+
+.titleDescription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  z-index: 2;
+  text-shadow: 2px 2px 2px black;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 2px black;
+  margin: 65px 0 90px;
+  z-index: 2;
+}
+
+.showDesc-true {
+  opacity: 1;
+}

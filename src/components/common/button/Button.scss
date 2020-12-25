@@ -1,0 +1,29 @@
+.button {
+  width: auto;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.primary {
+  background: #4DC6E4;
+  border: 1px solid rgba(159, 219, 234, 0.29);
+  padding: 0 30px;
+}
+
+.secondary {
+  background: #BADA6A;
+  border: 2px solid #FFFFFF;
+  padding: 0 60px;
+}
