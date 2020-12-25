@@ -13,8 +13,8 @@ export const Coral = React.memo(() => {
     };
 
     return (
-        <div className="container" style={{backgroundImage: `url(${backImage})`}}>
-            <div className="row coralBack">
+        <div className="container " style={{backgroundImage: `url(${backImage})`}}>
+            <div className="row ">
                 <ButtonPlus onClick={showPopup} toggle={toggle}/>
                 <div className={'coralTitle'}>Coral Coalition</div>
             </div>

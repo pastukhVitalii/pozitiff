@@ -16,7 +16,6 @@ export const Form = React.memo((props: PropsType) => {
     const setNameCallback = useCallback((e) => {
         setName(e.currentTarget.value)
     }, []);
-    console.log(name);
     const setEmailCallback = useCallback((e) => {
         setEmail(e.currentTarget.value)
     }, []);
