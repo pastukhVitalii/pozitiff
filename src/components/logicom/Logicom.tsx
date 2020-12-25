@@ -9,7 +9,6 @@ export const Logicom = React.memo(() => {
     const [toggle, setToggle] = useState<boolean>(false);
     const showPopup = () => {
         setToggle(!toggle)
-        console.log(!toggle);
     };
 
     return (
