@@ -1,0 +1,30 @@
+.input input {
+  box-sizing: border-box;
+  border: none;
+  width: 380px;
+  height: 50px;
+  padding: 0 0 0 15px;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+  margin: 5px 0;
+  background-color: #FFFFFF;
+}
+
+.input input::placeholder {
+  line-height: 20px;
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
+.higher input {
+  height: 110px;
+}
+
+.error {
+  border-color: red;
+}
+
+

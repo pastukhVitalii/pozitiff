@@ -14,7 +14,7 @@ export const GoodBody = React.memo(() => {
 
     return (
         <div className="container" style={{backgroundImage: `url(${backImage})`}}>
-            <div className="row coralBack">
+            <div className="row">
                 <ButtonPlus onClick={showPopup} toggle={toggle}/>
                 <div className={'goodBodyTitle'}>GoodBody</div>
             </div>

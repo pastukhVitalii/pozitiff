@@ -5,6 +5,7 @@ import {Button} from "./components/common/button/Button";
 import {Logicom} from "./components/logicom/Logicom";
 import {Coral} from "./components/coral/Coral";
 import {GoodBody} from "./components/goodbody/GoodBody";
+import {Form} from "./components/common/form/Form";
 
 function App() {
 
@@ -20,9 +21,11 @@ function App() {
             <Logicom/>
             <Coral/>
             <GoodBody/>
-            <Button name={'See more projects'} type={'primary'} onClick={changeModalStatus}/>
             <div className={`modal isModalVisible-${isModalVisible}`}>
-                modal
+                <Form changeModalStatus={changeModalStatus}/>
+            </div>
+            <div className={'btn_modal'}>
+                <Button name={'See more projects'} type={'primary'} onClick={changeModalStatus}/>
             </div>
         </div>
     );
