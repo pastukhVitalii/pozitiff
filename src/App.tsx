@@ -24,6 +24,11 @@ function App() {
 
     return (
         <div className="App">
+
+            {/* Item 3 is solved by means of a format SVG
+                also, it can be resolved with it`s
+            <img src="/images/foo.png" alt="bar" srcset="/images/foo.png 2x" /> */}
+
             {/* Components Main, Logicom, Coral, GoodBody can delete */}
             <Universal title={'Main'} backImage={backImage1} titleDesc={'Description about project'}
                        description={'Website design & code'}/>

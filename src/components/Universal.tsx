@@ -19,7 +19,7 @@ export const Universal = React.memo((props: PropType) => {
         setToggle(!toggle)
     };
 
-    const fix = props.fixImg?'200px': '';
+    const fix = props.fixImg ? '200px' : '';
     return (
         <div className="container" style={{backgroundImage: `url(${props.backImage})`, backgroundSize: `${fix}`}}>
             <div className="row">
